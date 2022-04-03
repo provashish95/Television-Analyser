@@ -3,10 +3,13 @@ import './Home.css';
 import logo from '../images/sony.jpg';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
+import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
     // console.log(reviews);
+    const navigate = useNavigate();
+
     return (
         <>
             <section className='container'>
@@ -21,7 +24,6 @@ const Home = () => {
                     </div>
                 </div>
 
-
             </section>
             <div className="container">
                 <h1 className='text-center'>Customer reviews</h1>
@@ -29,8 +31,8 @@ const Home = () => {
                     {
                         reviews.map(review => <Review key={review.id} review={review}></Review>)
                     }
-
                 </div>
+                <button onClick={() => navigate('/reviews')} className='btn btn-info'>See all reviews</button >
             </div>
         </>
     );
