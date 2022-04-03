@@ -1,8 +1,12 @@
 import React from 'react';
 import './Home.css';
 import logo from '../images/sony.jpg';
+import useReviews from '../../hooks/useReviews';
+import Review from '../Review/Review';
 
 const Home = () => {
+    const [reviews, setReviews] = useReviews();
+    // console.log(reviews);
     return (
         <>
             <section className='container'>
@@ -22,27 +26,10 @@ const Home = () => {
             <div className="container">
                 <h1 className='text-center'>Customer reviews</h1>
                 <div className="row">
-                    <div className="col-4">
-                        <div className="card">
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-4">
-                        <div className="card">
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-4">
-                        <div className="card">
-                            <div className="card-body">
-                                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        reviews.map(review => <Review key={review.id} review={review}></Review>)
+                    }
+
                 </div>
             </div>
         </>

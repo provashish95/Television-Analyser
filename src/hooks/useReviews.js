@@ -4,9 +4,9 @@ const useReviews = () => {
     const [reviews, setReviews] = useState([]);
 
     useEffect(() => {
-        fetch('reviews-data.json')
+        fetch('reviews.json')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setReviews(data))
     }, []);
 
     return [reviews, setReviews];
