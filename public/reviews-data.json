@@ -1,0 +1,51 @@
+[
+    {
+        "id": 1,
+        "rating": 4,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 2,
+        "rating": 5,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-2",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 3,
+        "rating": 3,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-3",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 4,
+        "rating": 4.5,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-4",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 5,
+        "rating": 4.6,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-5",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 6,
+        "rating": 3.4,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-6",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    },
+    {
+        "id": 7,
+        "rating": 4.4,
+        "picture": "https://i.pinimg.com/originals/9f/3d/13/9f3d13912d3cf78e4c87975bcebc1fee.jpg",
+        "name": "Just Chill-7",
+        "review": "nihil, eveniet aliquid culpa officia aut! Impedit sit sunt quaerat, odit,"
+    }
+]
