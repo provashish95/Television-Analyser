@@ -3,9 +3,11 @@ import './Footer.css';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>this is footer area</h1>
-        </div>
+        <>
+            <footer className='bg-light p-4 '>
+                <h5>All Rights Reserved Roy</h5>
+            </footer>
+        </>
     );
 };
 

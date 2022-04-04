@@ -11,8 +11,7 @@
     margin-left: 15px;
     font-size: 20px;
     font-weight: 700;
-    transition: color ease-in-out 300ms;
-    color: #c3c1d6
+    color: #1c0333
 }
 
 .link {
@@ -20,16 +19,12 @@
     margin-left: 15px;
     font-size: 20px;
     font-weight: 700;
-    color: #fdfdfd;
-    transition: color ease-in-out 300ms;
+    color: white;
+
 }
 
-/* .link:hover {
-    color: #120E43
-} */
-
 a:hover {
-    color: #fafafd
+    color: #1c0333;
 }
 
 .navbar-light .navbar-toggler {

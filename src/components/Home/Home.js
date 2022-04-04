@@ -6,7 +6,7 @@ import Review from '../Review/Review';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
-    const [reviews, setReviews] = useReviews();
+    const [reviews] = useReviews();
 
     const navigate = useNavigate();
 
@@ -29,13 +29,13 @@ const Home = () => {
 
             </section>
             <div className="container">
-                <h1 className='text-center'>Customer reviews</h1>
+                <h2 className='text-center fw-bold title-style'>Customer reviews</h2>
                 <div className="row">
                     {
                         shortReviews.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
-                <button onClick={() => navigate('/reviews')} className='btn btn-info'>See all reviews</button >
+                <p className='text-center'><button onClick={() => navigate('/reviews')} className='btn  btn-style'>See all reviews</button ></p>
             </div>
         </>
     );

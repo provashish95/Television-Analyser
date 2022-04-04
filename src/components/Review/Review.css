@@ -1,0 +1,14 @@
+.card {
+    box-shadow: -9px 10px 8px 0px #2a0755, 1px 1px 10px 12px #f2f2e5, 5px 5px 10px 1px #000;
+}
+
+.card>hr {
+    padding: 2px;
+}
+
+/* .card-style {
+    background-color: #b382ee;
+    padding: 19.05px rem;
+    padding: 14px;
+    border-radius: 2rem;
+} */

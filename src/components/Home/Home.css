@@ -1,20 +1,21 @@
 .title-style {
-    color: #8d49f3;
+    color: #250358;
 }
 
 .text-style {
-    color: #2f0370;
+    color: #2d0070;
 }
 
 .btn-style {
     border: 2px solid #8d49f3;
     padding: 8px 60px;
+
 }
 
 .btn-style:hover {
     background-color: #8d49f3;
+    color: white
 }
-
 
 button:focus:not(:focus-visible) {
     outline: 0;
