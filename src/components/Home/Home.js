@@ -26,16 +26,15 @@ const Home = () => {
                         <img className='img-fluid rounded-3' src={image} alt="sonyTv" />
                     </div>
                 </div>
-
             </section>
             <div className="container">
-                <h2 className='text-center fw-bold title-style'>Customer reviews</h2>
+                <h4 className='text-center fw-bold title-style'>Customer reviews</h4>
                 <div className="row">
                     {
                         shortReviews.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
-                <p className='text-center'><button onClick={() => navigate('/reviews')} className='btn  btn-style mt-5'>See all reviews</button ></p>
+                <p className='text-center'><button onClick={() => navigate('/reviews')} className='btn  btn-style mt-5'>See All Reviews</button ></p>
             </div>
         </>
     );
