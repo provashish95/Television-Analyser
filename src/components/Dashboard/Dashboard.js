@@ -58,7 +58,7 @@ const Dashboard = () => {
                     <h6 className='text-center text-style'>Pie chart : Investment</h6>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6 ">
-                    <AreaChart width={500} height={400} data={chartsData} >
+                    <AreaChart width={500} height={300} data={chartsData} >
                         <CartesianGrid strokeDasharray="3 3" />
                         <XAxis dataKey="month" />
                         <YAxis />

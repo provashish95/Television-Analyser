@@ -1,10 +1,24 @@
 import React from 'react';
 import './Blogs.css';
+import '../Home/Home.css';
 
 const Blogs = () => {
     return (
-        <div>
-            <h4>this is blogs page</h4>
+        <div className="container">
+            <div className="row">
+                <div className="col-12">
+                    <h4 className='text-style '>What is context API </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit illo quibusdam exercitationem, neque ab facilis ipsum veniam, officiis in perferendis distinctio eius alias. Quas recusandae voluptas nesciunt natus quisquam. Aliquid porro ipsam recusandae aperiam dolor facilis quae harum quos? Voluptatem, illo quam. Ad, harum laboriosam autem quos aliquid minima quis vitae molestias vero, voluptatem nesciunt a, delectus earum odit. Minus consequuntur vero quae ad architecto facilis sequi dolore, animi nisi autem id rem ipsa! Quibusdam minima officia debitis praesentium totam optio quod odit iure harum nostrum esse, eius illo, quis, consequatur eveniet commodi dolores dolorem. Quisquam voluptas sed, minima cum sit amet corporis quam? Officia, ad sint ab totam cumque eum odio quas error velit esse! Quasi voluptas dolorem, quos aliquam error adipisci nobis saepe esse, in mollitia enim porro? Rem non voluptatem eius optio excepturi quas eveniet placeat, veritatis magnam incidunt recusandae adipisci nisi maxime, est quam. Inventore quibusdam aut, eius consectetur tempora sequi accusamus repellendus dignissimos alias at delectus sapiente accusantium. Voluptatem ratione similique deserunt quidem tempora, et placeat modi iusto ad, ea ducimus saepe quaerat quis cum a ex, aspernatur repudiandae perspiciatis optio. In eos dolores facere possimus recusandae voluptas corrupti earum itaque iste quidem. Vero.</p>
+                </div>
+                <div className="col-12">
+                    <h4 className='text-style '>What is Semantic tag and give some example </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit illo quibusdam exercitationem, neque ab facilis ipsum veniam, officiis in perferendis distinctio eius alias. Quas recusandae voluptas nesciunt natus quisquam. Aliquid porro ipsam recusandae aperiam dolor facilis quae harum quos? Voluptatem, illo quam. Ad, harum laboriosam autem quos aliquid minima quis vitae molestias vero, voluptatem nesciunt a, delectus earum odit. Minus consequuntur vero quae ad architecto facilis sequi dolore, animi nisi autem id rem ipsa! Quibusdam minima officia debitis praesentium totam optio quod odit iure harum nostrum esse, eius illo, quis, consequatur eveniet commodi dolores dolorem. Quisquam voluptas sed, minima cum sit amet corporis quam? Officia, ad sint ab totam cumque eum odio quas error velit esse! Quasi voluptas dolorem, quos aliquam error adipisci nobis saepe esse, in mollitia enim porro? Rem non voluptatem eius optio excepturi quas eveniet placeat, veritatis magnam incidunt recusandae adipisci nisi maxime, est quam. Inventore quibusdam aut, eius consectetur tempora sequi accusamus repellendus dignissimos alias at delectus sapiente accusantium. Voluptatem ratione similique deserunt quidem tempora, et placeat modi iusto ad, ea ducimus saepe quaerat quis cum a ex, aspernatur repudiandae perspiciatis optio. In eos dolores facere possimus recusandae voluptas corrupti earum itaque iste quidem. Vero.</p>
+                </div>
+                <div className="col-12">
+                    <h4 className='text-style '>What is Inline , inline block and block elements </h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reprehenderit illo quibusdam exercitationem, neque ab facilis ipsum veniam, officiis in perferendis distinctio eius alias. Quas recusandae voluptas nesciunt natus quisquam. Aliquid porro ipsam recusandae aperiam dolor facilis quae harum quos? Voluptatem, illo quam. Ad, harum laboriosam autem quos aliquid minima quis vitae molestias vero, voluptatem nesciunt a, delectus earum odit. Minus consequuntur vero quae ad architecto facilis sequi dolore, animi nisi autem id rem ipsa! Quibusdam minima officia debitis praesentium totam optio quod odit iure harum nostrum esse, eius illo, quis, consequatur eveniet commodi dolores dolorem. Quisquam voluptas sed, minima cum sit amet corporis quam? Officia, ad sint ab totam cumque eum odio quas error velit esse! Quasi voluptas dolorem, quos aliquam error adipisci nobis saepe esse, in mollitia enim porro? Rem non voluptatem eius optio excepturi quas eveniet placeat, veritatis magnam incidunt recusandae adipisci nisi maxime, est quam. Inventore quibusdam aut, eius consectetur tempora sequi accusamus repellendus dignissimos alias at delectus sapiente accusantium. Voluptatem ratione similique deserunt quidem tempora, et placeat modi iusto ad, ea ducimus saepe quaerat quis cum a ex, aspernatur repudiandae perspiciatis optio. In eos dolores facere possimus recusandae voluptas corrupti earum itaque iste quidem. Vero.</p>
+                </div>
+            </div>
         </div>
     );
 };
