@@ -39,8 +39,19 @@ const Dashboard = () => {
             </div>
             <div className="row mt-4">
                 <div className="col-sm-12 col-md-6 col-lg-6">
-                    <PieChart width={530} height={250}>
-                        <Pie data={chartsData} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#ff7070" />
+                    <PieChart width={400} height={400}>
+                        <Pie
+                            dataKey="investment"
+                            isAnimationActive={false}
+                            data={chartsData}
+                            nameKey="month"
+                            cx={200}
+                            cy={200}
+                            outerRadius={80}
+                            fill="#ff7070"
+                            stroke="#7f1919"
+                            label
+                        />
                         <Tooltip />
                     </PieChart>
                     <h6 className='text-center'>Pie chart : Investment</h6>

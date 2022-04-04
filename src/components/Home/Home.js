@@ -35,7 +35,7 @@ const Home = () => {
                         shortReviews.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
-                <p className='text-center'><button onClick={() => navigate('/reviews')} className='btn  btn-style'>See all reviews</button ></p>
+                <p className='text-center'><button onClick={() => navigate('/reviews')} className='btn  btn-style mt-5'>See all reviews</button ></p>
             </div>
         </>
     );

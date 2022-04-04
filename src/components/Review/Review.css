@@ -3,7 +3,18 @@
 }
 
 .card>hr {
-    padding: 2px;
+    padding: 1px;
+}
+
+.img-style {
+    border: 2px solid #7952B3;
+    border-radius: 50%;
+    height: 4rem;
+}
+
+.review-style {
+    margin: 1rem;
+    height: 200px;
 }
 
 /* .card-style {

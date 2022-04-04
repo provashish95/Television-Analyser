@@ -4,8 +4,8 @@ import './Footer.css';
 const Footer = () => {
     return (
         <>
-            <footer className='bg-light p-4 '>
-                <h5 className='text-center'>All Rights Reserved Roy</h5>
+            <footer className='bg-footer p-4 text-center mt-5 '>
+                <span className='text-white '>All Rights Reserved Roy</span>
             </footer>
         </>
     );
