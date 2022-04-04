@@ -4,8 +4,8 @@ import Img from '../../assets/image/notFound.png';
 
 
 const NotFound = () => {
-    return (~~
-        <div className= 'text-center my-5' >
+    return (
+        <div className='text-center my-5' >
             <img src={Img} alt="notFoundImg" className='errorImg' />
             <h1 className='text-danger fw-bolder '>404</h1>
             <h3 className='text-muted mb-4'>Sorry, The Page Not Found</h3>
