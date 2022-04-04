@@ -1,26 +1,29 @@
 import React from 'react';
 import './Home.css';
-import logo from '../images/sony.jpg';
+import image from '../../assets/image/sony.jpg';
 import useReviews from '../../hooks/useReviews';
 import Review from '../Review/Review';
 import { useNavigate } from 'react-router-dom';
 
 const Home = () => {
     const [reviews, setReviews] = useReviews();
-    // console.log(reviews);
+
     const navigate = useNavigate();
+
+    const shortReviews = reviews.slice(0, 3);
+
 
     return (
         <>
             <section className='container'>
                 <div className="row align-items-center my-3">
-                    <div className="col col-md-8 border border-success">
-                        <h1>Television Analyser</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat facilis mollitia molestias, earum aliquam explicabo. Rem adipisci quas omnis ex.</p>
-                        <button className='btn btn-info'>Live Demo</button>
+                    <div className="col-sm-12 col-md-6 order-2 order-md-1 order-lg-1 p-5">
+                        <h2 className='text-center fw-bold title-style'>Television Analyser</h2>
+                        <p className=' text-style   py-3 fw-bold text-center'>Take vision and sound to the next level with Cognitive Processor XR™. Our revolutionary processor on Sony BRAVIA XR™ TVs reproduces content the way humans see and hear for an incredibly lifelike experience. It understands how the human eye focuses, cross analysing images to give real life depth, extraordinary contrast and beautifully vivid colours.  </p>
+                        <p className='text-center'><button className='btn  btn-style'>Live Demo</button></p>
                     </div>
-                    <div className="col col-md-4 border border-success">
-                        <img className='img-fluid' src={logo} alt="sonyTv" />
+                    <div className="col-sm-12 col-md-6 order-1 order-md-2 order-lg-2  p-4">
+                        <img className='img-fluid rounded-3' src={image} alt="sonyTv" />
                     </div>
                 </div>
 
@@ -29,7 +32,7 @@ const Home = () => {
                 <h1 className='text-center'>Customer reviews</h1>
                 <div className="row">
                     {
-                        reviews.map(review => <Review key={review.id} review={review}></Review>)
+                        shortReviews.map(review => <Review key={review.id} review={review}></Review>)
                     }
                 </div>
                 <button onClick={() => navigate('/reviews')} className='btn btn-info'>See all reviews</button >

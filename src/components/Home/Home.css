@@ -1,0 +1,27 @@
+.title-style {
+    color: #8d49f3;
+}
+
+.text-style {
+    color: #2f0370;
+}
+
+.btn-style {
+    border: 2px solid #8d49f3;
+    padding: 8px 60px;
+}
+
+.btn-style:hover {
+    background-color: #8d49f3;
+}
+
+
+button:focus:not(:focus-visible) {
+    outline: 0;
+}
+
+.btn-check:focus+.btn,
+.btn:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(150, 45, 236, 0.966);
+}
