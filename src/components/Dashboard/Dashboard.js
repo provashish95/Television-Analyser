@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { CartesianGrid, Line, LineChart, Tooltip, XAxis, YAxis } from 'recharts';
+import { Area, AreaChart, Bar, BarChart, CartesianGrid, Line, LineChart, Pie, PieChart, Tooltip, XAxis, YAxis } from 'recharts';
 import './Dashboard.css';
+
 
 const Dashboard = () => {
     const [chartsData, setChartsData] = useState([]);
@@ -10,7 +11,7 @@ const Dashboard = () => {
             .then(data => setChartsData(data))
     }, []);
 
-    console.log(chartsData);
+
     return (
         <section className='container'>
             <div className="row mt-5">
@@ -20,15 +21,39 @@ const Dashboard = () => {
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
-
-                        <Line type="monotone" dataKey="revenue" stroke="#8884d8" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="investment" stroke="#915059" activeDot={{ r: 8 }} />
+                        <Line type="monotone" dataKey="revenue" stroke="#3f6bc5" activeDot={{ r: 8 }} />
                     </LineChart>
-                    <h6 className='text-center'>This is Line chart</h6>
+                    <h6 className='text-center'>Line chart : Investment & Revenue</h6>
                 </div>
                 <div className="col-sm-12 col-md-6 col-lg-6">
-
-
-
+                    <BarChart width={500} height={300} data={chartsData}>
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Bar dataKey="sell" fill="#7f1919" />
+                    </BarChart>
+                    <h6 className='text-center'>Bar chart : Sells</h6>
+                </div>
+            </div>
+            <div className="row mt-4">
+                <div className="col-sm-12 col-md-6 col-lg-6">
+                    <PieChart width={530} height={250}>
+                        <Pie data={chartsData} dataKey="investment" nameKey="month" cx="50%" cy="50%" outerRadius={50} fill="#ff7070" />
+                        <Tooltip />
+                    </PieChart>
+                    <h6 className='text-center'>Pie chart : Investment</h6>
+                </div>
+                <div className="col-sm-12 col-md-6 col-lg-6 ">
+                    <AreaChart width={500} height={400} data={chartsData} >
+                        <CartesianGrid strokeDasharray="3 3" />
+                        <XAxis dataKey="month" />
+                        <YAxis />
+                        <Tooltip />
+                        <Area type="monotone" dataKey="revenue" stroke="#915059" fill="#915059" />
+                    </AreaChart>
+                    <h6 className='text-center'>Area chart : Revenue</h6>
                 </div>
             </div>
         </section>
