@@ -1,10 +1,11 @@
 import React from 'react';
 import './Review.css';
 import '../Home/Home.css';
+import { StarIcon } from '@heroicons/react/solid';
 
 const Review = (props) => {
-    //console.log(props.review);
     const { name, review, rating, picture } = props.review;
+
     return (
         <div className="col-sm-12 col-md-6 col-lg-4 card-style my-3">
             <div className="card p-4">
@@ -21,7 +22,40 @@ const Review = (props) => {
                     <p className="card-text"><span className='fw-bold text-style'>Review:</span> {review}</p>
                 </div>
                 <hr className='text-style' />
-                <p className="card-text"><span className='fw-bold text-style'>Rating:</span> {rating}</p>
+                <p className="card-text">
+                    <span className='fw-bold text-style'>Rating:( {rating} )</span>
+
+                    {
+                        rating === 5 &&
+                        <span>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                        </span>
+                    }
+                    {
+                        rating === 4 &&
+                        <span>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon'></StarIcon>
+                        </span>
+                    }
+                    {
+                        rating === 3 &&
+                        <span>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon icon-color'></StarIcon>
+                            <StarIcon className='style-icon'></StarIcon>
+                            <StarIcon className='style-icon'></StarIcon>
+                        </span>
+                    }
+                </p>
             </div>
         </div>
     );
