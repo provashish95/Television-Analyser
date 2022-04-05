@@ -12,7 +12,7 @@ const About = () => {
                     <p className='text-center fw-bold text-style'>Television analyzer is a fast growing reviews website here others customer showing all reviews about products. And any company can add their product on the television analyser website for better sells. Contact us at <span><MailIcon style={{ width: '21px' }}></MailIcon></span>  provashishroy95@gmail.com <br></br><span><PhoneIcon style={{ width: '21px' }}></PhoneIcon></span>Call: 01632544810 </p>
                 </div>
                 <div className="col-sm-12 col-md-6">
-                    <img src={AboutImg} alt="aboutimg" className='img-fluid' />
+                    <img src={AboutImg} alt="aboutImg" className='img-fluid' />
                 </div>
             </div>
         </div>

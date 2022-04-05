@@ -1,5 +1,4 @@
 import React from 'react';
-import './Blogs.css';
 import '../Home/Home.css';
 
 const Blogs = () => {
@@ -21,7 +20,6 @@ const Blogs = () => {
                     <p>Semantic tag হচ্ছে যার নিজেস্ব মিনিং ফুল নাম থাকবে যা দ্বারা বুঝা যাবে কি ধরনের content এর জন্য tag টি use করা হচ্ছে। যেমন header tag use করলে আমারা বুঝতে পারি এখনে হেডিং জাতীয় content আছে। মোট কথা semantic tag এইচটিএমএল এ ব্যবহার করলে developer যেমন tag দেখেই content এর idea নিতে পারবে আবার browser থেকে semantic tag দ্বারা contain কোনো Content কে দেখতেও better লাগে। আমরা কিছু semantic tag  এর উদাহরন দেখি যেমন:  <b>{header}</b> it defines a header for a web page<br /> <b>{nav}</b>: defines a container for navigation links <br /> <b>{section}</b>: defines a section in a web page<br /> <b>{article}</b>: This element contains the main part, containing information about the web page <br /> <b> {aside}</b>:  The aside content is often placed as a sidebar in a document.<br />
                         <b>{footer}</b>: defines a footer for a document or a section.<br />
                         semantic tag use করার বেশ কিছু সুবিধা আছে যেমন SEO এর জন্য , easier to read, It has greater accessibility, Overall, semantic elements also lead to more consistent code.
-
                     </p>
                 </div>
                 <div className="col-12">

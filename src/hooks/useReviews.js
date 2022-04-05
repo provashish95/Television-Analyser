@@ -9,7 +9,6 @@ const useReviews = () => {
             .then(res => res.json())
             .then(data => {
                 setReviews(data)
-
             })
     }, []);
 
