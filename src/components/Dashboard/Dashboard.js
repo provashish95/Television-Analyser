@@ -34,6 +34,7 @@ const Dashboard = () => {
                         <YAxis />
                         <Tooltip />
                         <Bar dataKey="sell" fill="#7f1919" />
+
                     </BarChart>
                     <h6 className='text-center text-style'>Bar chart : Sells</h6>
                 </div>
@@ -63,9 +64,10 @@ const Dashboard = () => {
                         <XAxis dataKey="month" />
                         <YAxis />
                         <Tooltip />
-                        <Area type="monotone" dataKey="revenue" stroke="#915059" fill="#915059" />
+                        <Area type="monotone" dataKey="revenue" stroke="#915059" fill="#915059" label />
+                        <Area type="monotone" dataKey="investment" stroke="#7f1919" fill="#7f1919" label />
                     </AreaChart>
-                    <h6 className='text-center text-style'>Area chart : Revenue</h6>
+                    <h6 className='text-center text-style'>Area chart : Revenue & investment</h6>
                 </div>
             </div>
         </section>
