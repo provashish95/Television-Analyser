@@ -8,7 +8,7 @@
 
 --------------
 
-## Website features & developing step
+## Website features & developing steps
 
 * Firstly, I build a website television analysis home page, here add overview a product and showing dynamically three customers review about product and add a button for showing all reviews of customer's.
 * Reviews' page has all customers reviews with customer names, pictures, reviews and ratings.
